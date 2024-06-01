@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football League - Wonderful Photos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Football League</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team Introduction</a></li>
+                <li><a href="players.html">Famous Players</a></li>
+                <li><a href="photos.html">Wonderful Photos</a></li>
+                <li><a href="https://www.youtube.com/watch?v=5Yo23e0hB48">External Link</a></li>
+                <li><a href="mailto:cathychen087@gmail.com">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="photo-gallery">
+            <h2>Wonderful Photos</h2>
+            <div class="photo-row">
+                <div class="photo-card">
+                    <img src="img/11.jpg" alt="Exciting Photo 1" onclick="openModal(this.src)">
+                </div>
+                <div class="photo-card">
+                    <img src="img/12.jpg" alt="Exciting Photo 2" onclick="openModal(this.src)">
+                </div>
+                <div class="photo-card">
+                    <img src="img/13.jpg" alt="Exciting Photo 3" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div class="photo-row">
+                <div class="photo-card">
+                    <img src="img/14.jpg" alt="Exciting Photo 4" onclick="openModal(this.src)">
+                </div>
+                <div class="photo-card">
+                    <img src="img/15.jpg" alt="Exciting Photo 5" onclick="openModal(this.src)">
+                </div>
+                <div class="photo-card">
+                    <img src="img/16.jpg" alt="Exciting Photo 6" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div class="photo-row">
+                <div class="photo-card">
+                    <img src="img/17.jpg" alt="Exciting Photo 7" onclick="openModal(this.src)">
+                </div>
+                <div class="photo-card">
+                    <img src="img/18.jpg" alt="Exciting Photo 8" onclick="openModal(this.src)">
+                </div>
+                <div class="photo-card">
+                    <img src="img/19.jpg" alt="Exciting Photo 9" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Football League. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById("modal").style.display = "block";
+            document.getElementById("modal-img").src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
